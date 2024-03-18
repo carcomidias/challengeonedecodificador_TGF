@@ -1,0 +1,53 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="container">
+      <div class="content">
+        <img class="logo" src="images/logoAlura.svg" alt="" />
+      </div>
+    </header>
+    <main class="container">
+      <form class="content" action="">
+        <label for="text-input" hidden>Digite seu texto</label>
+        <textarea
+          name="text-input"
+          placeholder="Digite seu texto"
+          id="text-input"
+          rows="7"
+        ></textarea>
+        <div class="warning content">
+          <img src="images/atencao.svg" alt="" />
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="buttons-section content">
+          <button class="button-blue" id="encrypt-button">Criptografar</button>
+          <button class="button-white" id="decrypt-button">
+            Descriptografar
+          </button>
+        </div>
+      </form>
+
+      <section class="content" id="final-text-section">
+        <img
+          class="hidden"
+          src="images/pessoa.svg"
+          alt="mulher observando  diamante com uma lupa"
+        />
+        <p class="title">Nenhuma mensagem encontrada</p>
+        <p class="subtitle">
+          Digite um texto que você deseja criptografar ou descriptografar.
+        </p>
+        <p id="copy-success-message" class="copy-success-message"></p>
+      </section>
+    </main>
+    <footer class="container">
+      <div class="content">
+        <p>© Janeiro2024 Fabio Lopes. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
